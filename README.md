@@ -40,13 +40,15 @@ python main.py phones.csv --filter "brand=xiaomi" --aggregate "max:rating"
 <pre> ```MAX of 'rating': 4.6``` </pre>
 
 Обработка ошибки:
-
+```bash
 python main.py phones.csv --filter "unknown_col=val"
-## Вывод: Invalid filter: Column 'unknown_col' not found.
+```
+<pre> ```Вывод: Invalid filter: Column 'unknown_col' not found.``` </pre>
 
 ## Как запустить тесты
-
+```bash
 pytest --cov=csv_processor
+```
 
 ## Скриншоты результатов
 
