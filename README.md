@@ -30,20 +30,20 @@ poco x5 pro,xiaomi,299,4.4
 python main.py phones.csv --aggregate "avg:price"
 ```
 
-<pre> ```AVG of 'price': 674.0``` </pre>
+<pre>AVG of 'price': 674.0</pre>
 
 Комбинированный пример:
 ```bash
 python main.py phones.csv --filter "brand=xiaomi" --aggregate "max:rating"
 ```
 
-<pre> ```MAX of 'rating': 4.6``` </pre>
+<pre>MAX of 'rating': 4.6</pre>
 
 Обработка ошибки:
 ```bash
 python main.py phones.csv --filter "unknown_col=val"
 ```
-<pre> ```Вывод: Invalid filter: Column 'unknown_col' not found.``` </pre>
+<pre>Вывод: Invalid filter: Column 'unknown_col' not found.</pre>
 
 ## Как запустить тесты
 ```bash
