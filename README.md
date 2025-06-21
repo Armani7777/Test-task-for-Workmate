@@ -6,7 +6,6 @@
 
 * Фильтрация по любой колонке (>, <, =, >=, <=, работает и для числовых, и для строковых данных)
 * Агрегация (avg, min, max) по числовым колонкам
-* Красивый вывод таблицы в консоль (с помощью tabulate)
 * Обработка ошибок (несуществующая колонка, неправильная агрегация и т.д.)
 
 ## Требования
@@ -27,16 +26,6 @@ poco x5 pro,xiaomi,299,4.4
 ## Примеры запуска
 
 Фильтрация по бренду:
-
-python main.py phones.csv --filter "brand=xiaomi"
-
-+---------------+---------+---------+----------+
-| name          | brand   |   price |   rating |
-+===============+=========+=========+==========+
-| redmi note 12 | xiaomi  |     199 |      4.6 |
-+---------------+---------+---------+----------+
-| poco x5 pro   | xiaomi  |     299 |      4.4 |
-+---------------+---------+---------+----------+
 
 Агрегация по цене:
 
@@ -61,5 +50,5 @@ pytest --cov=csv_processor
 
 ## Скриншоты результатов
 
-![пример](Test_task_for_Workmate/test_result_screenshots/test_result_1.jpg)
-![пример](Test_task_for_Workmate/test_result_screenshots/test_result_2.jpg)
+![пример](test_task_for_workmate/test_result_screenshots/test_result_1.jpg)
+![пример](test_task_for_workmate/test_result_screenshots/test_result_2.jpg)
