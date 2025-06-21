@@ -25,19 +25,19 @@ poco x5 pro,xiaomi,299,4.4
 
 ## Примеры запуска
 
-Фильтрация по бренду:
-
 Агрегация по цене:
-
+```bash
 python main.py phones.csv --aggregate "avg:price"
+```
 
-AVG of 'price': 674.0
+<pre> ```AVG of 'price': 674.0``` </pre>
 
 Комбинированный пример:
-
+```bash
 python main.py phones.csv --filter "brand=xiaomi" --aggregate "max:rating"
+```
 
-MAX of 'rating': 4.6
+<pre> ```MAX of 'rating': 4.6``` </pre>
 
 Обработка ошибки:
 
